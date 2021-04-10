@@ -466,8 +466,9 @@ ol {
 }
 
 .hero-item {
-	height: 921px;
-	padding-top: 125px;
+	height: 700px;
+	padding-bottom: 100px;
+	padding-top: 80px;
 	border-bottom: 2px solid #b01ba5;
 }
 
