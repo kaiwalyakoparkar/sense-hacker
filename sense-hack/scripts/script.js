@@ -123,3 +123,10 @@ function gameOver(winner) {
     document.querySelector(".winner-section").classList.add("player-color");
   }
 }
+
+// Starts the game
+function startGame() {
+  document.querySelector(".game-board").classList.remove("before-game");
+  document.querySelector(".game-board").classList.add("during-game");
+  playTurn();
+}
