@@ -178,3 +178,28 @@ function updateScores(){
   }
   document.querySelector(".hacker-stats .life-left").style.height =  hackerPercent + "%";
 }
+
+// Plays one turn of the game
+function playTurn() {
+
+  roundFinished = true;
+  cardSelected = false;
+
+  document.querySelector(".game-board").classList.remove("card-selected");
+
+  // Remove "ouch" class from player and hacker thumbnails
+  document.querySelector(".hacker-stats .thumbnail").classList.remove("ouch");
+  document.querySelector(".player-stats .thumbnail").classList.remove("ouch");
+
+  // Hides the "next turn" button, will show again when turn is over
+  document.querySelector(".next-turn").setAttribute("disabled", "true");
+
+  for(var i = 0; i < allCardElements.length; i++) {
+    var card = allCardElements[i];
+    card.classList.remove("showCard");
+  }
+
+  setTimeout(function(){
+    revealCards();
+  }, 500);
+}
