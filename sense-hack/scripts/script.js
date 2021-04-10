@@ -6,6 +6,7 @@ var hackerLife = 5;
 var hackerWinnerMessage = "Game over: You got hacked!";
 var playerWinnerMessage = "You defeated the hacker!";
 
+
 // Game code starts here
 var playerStartLife = parseInt(playerLife);
 var hackerStartLife = parseInt(hackerLife);
@@ -28,6 +29,7 @@ for(var i = 0; i < allCardElements.length; i++) {
     });
   }
 }
+
 
 // When a card is clicked
 function cardClicked(cardEl) {
@@ -109,6 +111,7 @@ function compareCards(){
   document.querySelector("button.next-turn").removeAttribute("disabled");
 }
 
+// Shows the winner message
 function gameOver(winner) {
   document.querySelector(".game-board").classList.add("game-over");
   document.querySelector(".winner-section").style.display = "flex";
@@ -124,12 +127,14 @@ function gameOver(winner) {
   }
 }
 
+
 // Starts the game
 function startGame() {
   document.querySelector(".game-board").classList.remove("before-game");
   document.querySelector(".game-board").classList.add("during-game");
   playTurn();
 }
+
 
 // Start the game over from scratch
 function restartGame(){
@@ -178,6 +183,20 @@ function updateScores(){
   }
   document.querySelector(".hacker-stats .life-left").style.height =  hackerPercent + "%";
 }
+
+
+// Shuffles an array
+function shuffleArray(a) {
+  var j, x, i;
+  for (i = a.length; i; i--) {
+    j = Math.floor(Math.random() * i);
+    x = a[i - 1];
+    a[i - 1] = a[j];
+    a[j] = x;
+  }
+  return a;
+}
+
 
 // Plays one turn of the game
 function playTurn() {
