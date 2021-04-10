@@ -29,3 +29,28 @@ for(var i = 0; i < allCardElements.length; i++) {
   }
 }
 
+// When a card is clicked
+function cardClicked(cardEl) {
+
+  if(cardSelected) { return; }
+  cardSelected = true;
+
+  cardEl.classList.add("played-card");
+
+  document.querySelector(".game-board").classList.add("card-selected");
+
+  // Wait 500ms to reveal the hacker power
+  setTimeout(function(){
+    revealHackerPower();
+  },500)
+
+  // Wait 750ms to reveal the player power
+  setTimeout(function(){
+    revealPlayerPower();
+  },800)
+
+  // Wait 1250ms to compare the card scoers
+  setTimeout(function(){
+    compareCards();
+  }, 1400);
+}
