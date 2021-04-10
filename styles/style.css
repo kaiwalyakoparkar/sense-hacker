@@ -92,3 +92,41 @@ h1 strong {
   border-radius: 4px;
   background: rgba(0,0,0,.3);
 }
+
+.stats .thumbnail {
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0 0 5px 0;
+  text-shadow: 5px 5px 0px rgba(0,0,0,.2);
+}
+
+.stats .thumbnail.ouch {
+  animation: ouch .15s linear 3;
+}
+
+.stats .name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.life-total {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+@keyframes ouch {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
