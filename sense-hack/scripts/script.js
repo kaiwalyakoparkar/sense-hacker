@@ -109,3 +109,17 @@ function compareCards(){
   document.querySelector("button.next-turn").removeAttribute("disabled");
 }
 
+function gameOver(winner) {
+  document.querySelector(".game-board").classList.add("game-over");
+  document.querySelector(".winner-section").style.display = "flex";
+  document.querySelector(".winner-section").classList.remove("player-color");
+  document.querySelector(".winner-section").classList.remove("hacker-color");
+
+  if(winner == "Hacker") {
+    document.querySelector(".winner-message").innerHTML = hackerWinnerMessage;
+    document.querySelector(".winner-section").classList.add("hacker-color");
+  } else {
+    document.querySelector(".winner-message").innerHTML = playerWinnerMessage;
+    document.querySelector(".winner-section").classList.add("player-color");
+  }
+}
