@@ -30,11 +30,20 @@
       </div>
 
       <div class="player-area">
-        <div class="stats player-stats"></div>
+        <div class="stats player-stats">
+          <div class="life-bar">
+            <div class="life-left player-color"></div>
+          </div>
+          <div class="life-total"></div>
+          <div class="thumbnail">😎</div>
+          <div class="name">You</div>
+        </div>
+
         <div class="card player-card">
           <div class="text">I never use public wifi networks.</div>
           <div class="power">5</div>
         </div>
+
         <div class="card player-card">
           <div class="text">
             I browse the web, but I never do any personal business on a public
@@ -42,12 +51,16 @@
           </div>
           <div class="power">3</div>
         </div>
+        
         <div class="card player-card">
           <div class="text">
             I connect to any wifi network I can use in public.
           </div>
           <div class="power">1</div>
         </div>
+
+        <button class="start-game" onClick="startGame()">Play the Game!</button>
+        <button class="next-turn" onClick="playTurn()">Next!</button>
       </div>
     </div>
   </body>
