@@ -7,9 +7,15 @@
 }
 
 .player-area {
-  background-color: #0d3158;
+  background-color: #000;
   background-image: url(images/chip.svg);
+  /* border-left: 1px solid rgba(255, 255, 255, 0.2); */
+  box-shadow: inset -200px 0px 1000px  #B51BAB;
 }
+
+/* .player-area {
+  box-shadow: inset 10px 0px  100px 100px #B31BA8;
+} */
 
 .player-card .power {
   background-image: url(images/shield.svg);
@@ -22,8 +28,10 @@
 }
 
 .hacker-area {
-  background-color: #3c1912;
+  background-color: #000;
   background-image: url(images/chip.svg);
+  /* border-right: 1px solid rgba(255, 255, 255, 0.2); */
+  box-shadow: inset 200px 0px 1000px  #B51BAB;
 }
 
 .hacker-card .power {

@@ -8,6 +8,8 @@ body {
   background-size: 200px;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+
 }
 
 .game-board {
@@ -15,17 +17,20 @@ body {
   position: absolute;
   height: 100vh;
   width: 100%;
+  display: flex;
 }
 
-.hacker-area h1 {
+.game-board h1 {
   padding: 12px 10px 0 10px;
   margin: 0;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
   color: rgba(255,255,255,.6);
   font-style: italic;
   position: absolute;
-  top: 0;
+  top: 5%;
+  left: 32%;
+  z-index: 2;
 }
 
 h1 strong {
@@ -38,22 +43,14 @@ h1 strong {
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 30px 10px 30px 110px;
+  align-items: center;
+  padding: 30px 100px 260px 10px;
   min-height: 235px;
   background-repeat: repeat;
   background-size: 200px;
-  height: 50vh;
+  height: 100vh;
+  width: 50vw;
   box-sizing: border-box;
-}
-
-.hacker-area {
-  background-position: bottom;
-  align-items: flex-end;
-}
-
-.player-area {
-  background-position: top;
-  align-items: top;
 }
 
 .player-area .card {
@@ -84,13 +81,19 @@ h1 strong {
   justify-content: center;
   font-size: 20px;
   position: absolute;
-  left: 0;
   top: 0;
   bottom: 0;
   min-width: 90px;
   padding: 0 5px 0 5px;
   border-radius: 4px;
-  background: rgba(0,0,0,.3);
+}
+
+.hacker-area .stats {
+  left: 0;
+}
+
+.player-area .stats {
+  right: 0;
 }
 
 .stats .thumbnail {
@@ -137,7 +140,7 @@ h1 strong {
 
 button.next-turn {
   position: fixed;
-  bottom: 20px;
+  bottom: 40px;
   transition: all .15s ease-out;
   background: black;
   display: none;
@@ -151,7 +154,8 @@ button.start-game {
   position: absolute;
   background: black;
   display: none;
-  top: -20px;
+  top: 50%;
+  left: -10%;
 }
 
 .before-game .start-game {
@@ -415,7 +419,7 @@ button[disabled=true] {
     color: rgba(0,0,0,0);
     transform: scaleX(0);
   }
-  51 % {
+  51% {
     background: none;
     color: black;
     transform: scaleX(0);
@@ -423,5 +427,25 @@ button[disabled=true] {
   100% {
     transform: scaleX(1);
   }
+}
+
+.hacker-area .thumbnail {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+.hacker-area .thumbnail img {
+  height: 400px;
+}
+
+.player-area .thumbnail {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+}
+
+.player-area .thumbnail img {
+  height: 400px;
 }
 

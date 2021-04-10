@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Sense Hack 👹</title>
-    <link rel="icon" type="image/png" sizes="128x128" href="images/favicon.png">
-    
-    <link rel="stylesheet" href="styles/style.css" type="text/css">
-    <link rel="stylesheet" href="customize.css" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sense Hack 👹</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="images/favicon.png"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="customize.css" type="text/css" />
     <script src="cards.js" type="text/javascript"></script>
-</head>
+  </head>
 
   <body>
     <div class="game-board">
-
+      <h1>
+        <strong>Hacker's attack Cards</strong> <br />
+        Choose the best card to stop the hackers' attack
+      </h1>
       <div class="hacker-area">
-
-        <h1>
-          <strong>Hacker's attack Cards</strong> <br/> Choose the best card to stop the hackers' attack
-        </h1>
-
         <div class="stats hacker-stats">
           <div class="life-bar">
             <div class="life-left hacker-color"></div>
           </div>
           <div class="life-total"></div>
-          <!-- Change the name and emoji here -->
-          <div class="thumbnail">👹</div>
+          <div class="thumbnail">
+            <img src="images/1.png" alt="hacker" />
+          </div>
           <div class="name">Hacker</div>
         </div>
-        
+
         <div class="card hacker-card hacker-color">
           <div class="text"></div>
           <div class="power"></div>
         </div>
-
       </div>
 
       <div class="player-area">
-
         <div class="stats player-stats">
           <div class="life-bar">
             <div class="life-left player-color"></div>
           </div>
           <div class="life-total"></div>
           <!-- Change the name and emoji here -->
-          <div class="thumbnail">😎</div>
+          <div class="thumbnail"><img src="images/2.png" alt="hacker" /></div>
           <div class="name">You</div>
         </div>
 
@@ -69,8 +71,6 @@
       </div>
     </div>
 
-
-
     <div class="winner-section">
       <div>
         <span class="winner-message">You got hacked!</span>
@@ -79,6 +79,5 @@
     </div>
 
     <script src="scripts/script.js" type="text/javascript"></script>
-
   </body>
 </html>
