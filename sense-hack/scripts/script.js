@@ -130,3 +130,29 @@ function startGame() {
   document.querySelector(".game-board").classList.add("during-game");
   playTurn();
 }
+
+// Start the game over from scratch
+function restartGame(){
+  document.querySelector(".game-board").classList.remove("game-over");
+  document.querySelector(".game-board").classList.remove("during-game");
+  document.querySelector(".game-board").classList.add("before-game");
+
+  document.querySelector(".winner-section").style.display = "none";
+  document.querySelector(".hacker-card").style.display = "none";
+
+  var cards = allCardElements;
+
+  document.querySelector("button").removeAttribute("disabled");
+
+  for(var i = 0; i < cards.length; i++) {
+    cards[i].style.display = "none";
+  }
+
+  playerLife = playerStartLife;
+  hackerLife = hackerStartLife;
+
+  roundFinished = true;
+  cardSelected = false;
+
+  updateScores();
+}
