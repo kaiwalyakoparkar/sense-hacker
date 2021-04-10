@@ -5,3 +5,8 @@
 .player-color {
   background-color: #2a79d0;
 }
+
+.player-area {
+  background-color: #0d3158;
+  background-image: url(images/chip.svg);
+}
