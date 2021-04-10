@@ -60,3 +60,9 @@ function revealPlayerPower(){
   var playerCard = document.querySelector(".played-card");
   playerCard.classList.add("reveal-power");
 }
+
+// Shows the power level on the hacker card
+function revealHackerPower(){
+  var hackerCard = document.querySelector(".hacker-card");
+  hackerCard.classList.add("reveal-power");
+}
