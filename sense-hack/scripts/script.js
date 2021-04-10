@@ -9,3 +9,12 @@ var playerWinnerMessage = "You defeated the hacker!";
 // Game code starts here
 var playerStartLife = parseInt(playerLife);
 var hackerStartLife = parseInt(hackerLife);
+
+var roundFinished = false;
+var cardSelected = false;
+
+updateScores();
+
+document.querySelector(".game-board").classList.add("before-game");
+
+var allCardElements = document.querySelectorAll(".card");
