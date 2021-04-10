@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SENSE HACKER</title>
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="game-board">
+      <div class="hacker-area">
+        <h1>
+          <strong>HACKER CARDS</strong> <br />
+          Choose the best card to stop the hackers' attack
+        </h1>
+
+        <div class="stats hacker-stats">
+          <div class="life-bar">
+            <div class="life-left hacker-color"></div>
+          </div>
+          <div class="life-total"></div>
+          <div class="thumbnail">👹</div>
+          <div class="name">Hacker</div>
+        </div>
+        <div class="card hacker-card hacker-color">
+          <div class="text"></div>
+          <div class="power"></div>
+        </div>
+      </div>
+
+      <div class="player-area">
+        <div class="stats player-stats">
+          <div class="life-bar">
+            <div class="life-left player-color"></div>
+          </div>
+          <div class="life-total"></div>
+          <div class="thumbnail">😎</div>
+          <div class="name">You</div>
+        </div>
+
+        <div class="card player-card player-color">
+          <div class="text">I never use public wifi networks.</div>
+          <div class="power">5</div>
+        </div>
+
+        <div class="card player-card player-color">
+          <div class="text">
+            I browse the web, but I never do any personal business on a public
+            wifi network.
+          </div>
+          <div class="power">3</div>
+        </div>
+
+        <div class="card player-card player-color">
+          <div class="text">
+            I connect to any wifi network I can use in public.
+          </div>
+          <div class="power">1</div>
+        </div>
+
+        <button class="start-game" onClick="startGame()">Play the Game!</button>
+        <button class="next-turn" onClick="playTurn()">Next!</button>
+      </div>
+    </div>
+
+
+    <div class="winner-section">
+      <div>
+        <span class="winner-message">You got hacked!</span>
+        <button class="restart" onClick="location.reload()">Play Again</button>
+      </div>
+    </div>
+  </body>
+</html>
