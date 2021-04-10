@@ -146,4 +146,25 @@ var scenarios = [
       }
     ]
   },
+  //eight
+  {
+    hackerCard : {
+      description : "I will crash your vulnerable system using ransomware attacks, malware and data breaches.",
+      power : 2,
+    },
+    playerCards : [
+      {
+        description : "You can't because I have turnned on Automatic Updates for my operating system.",
+        power : 4,
+      },
+      {
+        description : "I use web browsers such as Chrome or Firefox that receive frequent, automatic security updates.",
+        power : 3,
+      },
+      {
+        description : "I don't update my softwares nor do I download security updates.",
+        power : 1,
+      }
+    ]
+  }
 ]
