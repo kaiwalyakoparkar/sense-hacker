@@ -25,3 +25,7 @@
   background-color: #3c1912;
   background-image: url(images/chip.svg);
 }
+
+.hacker-card .power {
+  background-image: url(images/skull.svg);
+}
