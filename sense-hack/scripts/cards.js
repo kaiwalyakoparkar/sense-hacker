@@ -62,4 +62,25 @@ var scenarios = [
       }
     ]
   },
+  //four
+  {
+    hackerCard : {
+      description : "I watched you type your password and hacked your account.",
+      power : 2,
+    },
+    playerCards : [
+      {
+        description : "I use different passwords for all of my other accounts.",
+        power : 4,
+      },
+      {
+        description : "I changed my password on all of my accounts because they are the same.",
+        power : 2,
+      },
+      {
+        description : "I deleted that account and started a new one. ",
+        power : 1,
+      }
+    ]
+  },
 ]
