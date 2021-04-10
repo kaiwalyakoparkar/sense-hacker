@@ -14,3 +14,9 @@
 .player-card .power {
   background-image: url(images/shield.svg);
 }
+
+/* Hacker Styles */
+
+.hacker-color {
+  background-color: #ce3d20;
+}
