@@ -203,3 +203,58 @@ function playTurn() {
     revealCards();
   }, 500);
 }
+
+function revealCards(){
+
+
+  var j = 0;
+  var cardIndexes = shuffleArray([0, 1, 2]);
+
+  // Get scenario cards
+  console.log("scenarios.length == " + scenarios.length);
+
+  var randomScenarioIndex = Math.floor(Math.random() * scenarios.length);
+  var scenario = scenarios[randomScenarioIndex];
+  console.log(scenario.hackerCard.description);
+
+  scenarios.splice(randomScenarioIndex, 1);
+
+  console.log("scenarios.length after splice == " + scenarios.length);
+
+  var hackerCard = scenario.hackerCard;
+  var hackerCardEl = document.querySelector(".hacker-area .card");
+
+  // Contents of the player cards
+  var playerCards = scenario.playerCards;
+
+  for(var i = 0; i < allCardElements.length; i++) {
+    var card = allCardElements[i];
+
+    card.classList.remove("worse-card");
+    card.classList.remove("better-card");
+    card.classList.remove("played-card");
+    card.classList.remove("tie-card");
+    card.classList.remove("prepared");
+    card.classList.remove("reveal-power");
+
+    // Display the payer card details
+    if(card.classList.contains("player-card")) {
+      card.querySelector(".text").innerHTML = playerCards[cardIndexes[j]].description;
+      card.querySelector(".power").innerHTML = playerCards[cardIndexes[j]].power;
+      j++;
+    }
+
+    // Reveal each card one by one with a delay of 100ms
+    setTimeout(function(card, j){
+      return function() {
+        card.classList.remove("prepared");
+        card.style.display = "block";
+        card.classList.add("showCard");
+      }
+    }(card,i), parseInt(i+1) * 200);
+  }
+
+  // Display the hacker card
+  hackerCardEl.querySelector(".text").innerHTML = hackerCard.description;
+  hackerCardEl.querySelector(".power").innerHTML = hackerCard.power;
+}
