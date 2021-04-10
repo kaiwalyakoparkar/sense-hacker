@@ -66,3 +66,46 @@ function revealHackerPower(){
   var hackerCard = document.querySelector(".hacker-card");
   hackerCard.classList.add("reveal-power");
 }
+
+function compareCards(){
+  var playerCard = document.querySelector(".played-card");
+  var playerPowerEl = playerCard.querySelector(".power");
+
+  var hackerCard = document.querySelector(".hacker-card");
+  var hackerPowerEl = hackerCard.querySelector(".power");
+
+  var playerPower = parseInt(playerPowerEl.innerHTML);
+  var hackerPower = parseInt(hackerPowerEl.innerHTML);
+
+  var powerDifference = playerPower - hackerPower;
+
+  if (powerDifference < 0) {
+    // Player Loses
+    playerLife = playerLife + powerDifference;
+    hackerCard.classList.add("better-card");
+    playerCard.classList.add("worse-card");
+    document.querySelector(".player-stats .thumbnail").classList.add("ouch");
+  } else if (powerDifference > 0) {
+    // Player Wins
+    hackerLife = hackerLife - powerDifference;
+    playerCard.classList.add("better-card");
+    hackerCard.classList.add("worse-card");
+    document.querySelector(".hacker-stats .thumbnail").classList.add("ouch");
+  } else {
+    playerCard.classList.add("tie-card");
+    hackerCard.classList.add("tie-card");
+  }
+
+  updateScores();
+
+  if(playerLife <= 0) {
+    gameOver("Hacker");
+  } else if (hackerLife <= 0){
+    gameOver("Player")
+  }
+
+  roundFinished = true;
+
+  document.querySelector("button.next-turn").removeAttribute("disabled");
+}
+
