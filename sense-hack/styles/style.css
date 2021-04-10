@@ -223,3 +223,73 @@ button {
     transform: scale(1.02);
   }
 }
+
+button[disabled=true] {
+  opacity: 0;
+  transform: scale(.95);
+  cursor: default;
+}
+
+.card {
+  opacity: 0;
+  margin: 0 10px;
+  width: 150px;
+  height: 200px;
+  padding: 10px 15px;
+  color: black;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  position: relative;
+  box-sizing: border-box;
+  text-align: left;
+  transition: all .15s ease-out;
+  box-shadow: 0px 5px 5px rgba(0,0,0,.3);
+  overflow: hidden;
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20%;
+  width: 140%;
+  height: 0%;
+  background: white;
+  animation: sheen infinite .5s ease-in-out;
+  display: none;
+  transform: rotate(-7deg);
+}
+
+.game-board:not(.card-selected) .player-card:hover:after {
+  display: block;
+  animation: sheen .35s linear 1;
+}
+
+@keyframes sheen {
+  0% {
+    top: -10%;
+    height: 0%;
+    opacity: 0;
+  }
+  25% {
+    top: -10%;
+    height: 20%;
+    opacity: .2;
+  }
+  50% {
+    top: 20%;
+    height: 50%;
+    opacity: .3;
+  }
+  75% {
+    top: 110%;
+    height: 20%;
+    opacity: .2;
+  }
+  100% {
+    top: 110%;
+    height: 0%;
+    opacity: 0;
+  }
+}
