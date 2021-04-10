@@ -83,4 +83,25 @@ var scenarios = [
       }
     ]
   },
+  //five
+  {
+    hackerCard : {
+      description : "I looked at your browsing history on your phone to see what you do online.",
+      power : 2,
+    },
+    playerCards : [
+      {
+        description : "I always use a private browser that never keeps my history.",
+        power : 4,
+      },
+      {
+        description : "I set my browser to delete my history every time I quit. ",
+        power : 3,
+      },
+      {
+        description : "I never clear my browser history because I don’t like typing in big web addresses.",
+        power : 1,
+      }
+    ]
+  }, 
 ]
