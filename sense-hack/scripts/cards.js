@@ -125,4 +125,25 @@ var scenarios = [
       }
     ]
   }, 
+  //seven
+  {
+    hackerCard : {
+      description : "I provided you my USB for content transfer.",
+      power : 2,
+    },
+    playerCards : [
+      {
+        description : "I use Anti-Virus Protection & Firewall to protect my system.",
+        power : 4,
+      },
+      {
+        description : "I refused to use your USB as my system was not having Anti-Virus Protection & Firewall.",
+        power : 3,
+      },
+      {
+        description : "I used your USB as I am not afraid of my system getting corrupted.",
+        power : 1,
+      }
+    ]
+  },
 ]
