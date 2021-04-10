@@ -293,3 +293,132 @@ button[disabled=true] {
     opacity: 0;
   }
 }
+
+.card.prepared {
+  display: block;
+  opacity: 0;
+}
+
+.card.showCard {
+  opacity: 1;
+}
+
+.hacker-card.showCard {
+  animation: hackerShowCard .5s ease-out;
+}
+
+/* When the hacker card appears */
+@keyframes hackerShowCard {
+  0%   { transform: translateY(-25px); opacity: .5; }
+  60%  { transform: translateY(5px); }
+  100% { transform: translateY(0px); }
+}
+
+.player-card.showCard {
+  animation: playerShowCard .5s ease-out;
+}
+
+/* When the player card appears */
+@keyframes playerShowCard {
+  0%   { transform: translateY(25px); opacity: .5; }
+  60%  { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+.card.tie-card {
+  transform: translateY(0px) !important;
+}
+
+.card.worse-card {
+  background: #888;
+}
+
+.hacker-card.better-card {
+  transform: scale(1.03);
+}
+
+.hacker-card.worse-card {
+  transform: scale(.90) translateY(-25px) rotate(3deg);
+}
+
+.game-board:not(.card-selected) .player-area .card:not(.played-card):hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 15px rgba(0,0,0,.3);
+}
+
+.player-card.played-card {
+  transform: translateY(-40px);
+  box-shadow: 0px 15px 15px rgba(0,0,0,.3);
+}
+
+.player-card.worse-card {
+  transform: translateY(10px) rotate(3deg) !important;
+  box-shadow: 0px 5px 5px rgba(0,0,0,.3);
+}
+
+.player-card.better-card {
+  transform: scale(1.03) translateY(-60px);
+}
+
+/* Shows a checkmark on the better card */
+
+.card.better-card:before,
+.card.worse-card:before {
+  font-size: 30px;
+  position: absolute;
+  bottom: 18px;
+  right: 20px;
+  color: rgba(0,0,0,.3);
+  display: block;
+}
+
+.card.better-card:before {
+  content: "\2713";
+}
+
+.card.worse-card:before {
+  content: "\2717";
+}
+
+.card .power {
+  font-size: 30px;
+  position: absolute;
+  bottom: 12px;
+  line-height: 30px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  color: rgba(0,0,0,0);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card.reveal-power .power {
+  color: black;
+  animation: showPower .2s ease-out;
+  background: none;
+}
+
+
+@keyframes showPower {
+  0% {
+    background: none;
+    transform: scaleX(1);
+    color: rgba(0,0,0,0);
+  }
+  49% {
+    color: rgba(0,0,0,0);
+    transform: scaleX(0);
+  }
+  51% {
+    background: none;
+    color: black;
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
