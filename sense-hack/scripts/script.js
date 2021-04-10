@@ -54,3 +54,9 @@ function cardClicked(cardEl) {
     compareCards();
   }, 1400);
 }
+
+// Shows the power level on the player card
+function revealPlayerPower(){
+  var playerCard = document.querySelector(".played-card");
+  playerCard.classList.add("reveal-power");
+}
