@@ -12,20 +12,22 @@ body {
 
 .game-board {
   height: 100%;
-  position: absolute;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
+  display: flex;
 }
 
-.hacker-area h1 {
+.game-board h1 {
   padding: 12px 10px 0 10px;
   margin: 0;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 24px;
   color: rgba(255,255,255,.6);
   font-style: italic;
   position: absolute;
   top: 0;
+  left: 32%;
+  z-index: 5;
 }
 
 h1 strong {
@@ -38,23 +40,14 @@ h1 strong {
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 30px 10px 30px 110px;
+  align-items: center;
+  padding: 30px 10px;
   min-height: 235px;
-  background-repeat: repeat;
-  background-size: 200px;
-  height: 50vh;
+  height: 100vh;
   box-sizing: border-box;
+  width: 50vw;
 }
 
-.hacker-area {
-  background-position: bottom;
-  align-items: flex-end;
-}
-
-.player-area {
-  background-position: top;
-  align-items: top;
-}
 
 .player-area .card {
   cursor: pointer;
@@ -84,13 +77,20 @@ h1 strong {
   justify-content: center;
   font-size: 20px;
   position: absolute;
-  left: 0;
   top: 0;
   bottom: 0;
   min-width: 90px;
   padding: 0 5px 0 5px;
   border-radius: 4px;
   background: rgba(0,0,0,.3);
+}
+
+.hacker-area .stats {
+  left: 0;
+}
+
+.player-area .stats {
+  right: 0;
 }
 
 .stats .thumbnail {
@@ -151,7 +151,8 @@ button.start-game {
   position: absolute;
   background: black;
   display: none;
-  top: -20px;
+  top: 50%;
+  left: -10%;
 }
 
 .before-game .start-game {
@@ -341,6 +342,7 @@ button[disabled=true] {
   transform: scale(.90) translateY(-25px) rotate(3deg);
 }
 
+
 .game-board:not(.card-selected) .player-area .card:not(.played-card):hover {
   transform: translateY(-10px);
   box-shadow: 0px 15px 15px rgba(0,0,0,.3);
@@ -359,6 +361,7 @@ button[disabled=true] {
 .player-card.better-card {
   transform: scale(1.03) translateY(-60px);
 }
+
 
 /* Shows a checkmark on the better card */
 
@@ -422,3 +425,4 @@ button[disabled=true] {
     transform: scaleX(1);
   }
 }
+
