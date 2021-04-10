@@ -156,3 +156,25 @@ function restartGame(){
 
   updateScores();
 }
+
+// Updates the displayed life bar and life totals
+function updateScores(){
+
+  // Update life totals for each player
+  document.querySelector(".player-stats .life-total").innerHTML = playerLife;
+  document.querySelector(".hacker-stats .life-total").innerHTML = hackerLife;
+
+  // Update the player lifebar
+  var playerPercent = playerLife / playerStartLife * 100;
+  if (playerPercent < 0) {
+    playerPercent = 0;
+  }
+  document.querySelector(".player-stats .life-left").style.height =  playerPercent + "%";
+
+  // Update the hacker lifebar
+  var hackerPercent = hackerLife / hackerStartLife * 100
+  if (hackerPercent < 0) {
+    hackerPercent = 0;
+  }
+  document.querySelector(".hacker-stats .life-left").style.height =  hackerPercent + "%";
+}
