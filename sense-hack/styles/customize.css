@@ -1,0 +1,31 @@
+/* Change the colors in this stylesheet to customize the game. */ 
+
+/* Player Styles */
+
+.player-color {
+  background-color: #2a79d0;
+}
+
+.player-area {
+  background-color: #0d3158;
+  background-image: url(images/chip.svg);
+}
+
+.player-card .power {
+  background-image: url(images/shield.svg);
+}
+
+/* Hacker Styles */
+
+.hacker-color {
+  background-color: #ce3d20;
+}
+
+.hacker-area {
+  background-color: #3c1912;
+  background-image: url(images/chip.svg);
+}
+
+.hacker-card .power {
+  background-image: url(images/skull.svg);
+}
