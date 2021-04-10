@@ -28,8 +28,8 @@ body {
   color: rgba(255,255,255,.6);
   font-style: italic;
   position: absolute;
-  top: 5%;
-  left: 32%;
+  top: 2%;
+  left: 25%;
   z-index: 2;
 }
 
@@ -155,7 +155,7 @@ button.start-game {
   background: black;
   display: none;
   top: 50%;
-  left: -10%;
+  left:-18%;
 }
 
 .before-game .start-game {
