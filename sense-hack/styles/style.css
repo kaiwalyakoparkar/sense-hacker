@@ -130,3 +130,38 @@ h1 strong {
     transform: translateX(0);
   }
 }
+
+.game-over button {
+  display: none;
+}
+
+button.next-turn {
+  position: fixed;
+  bottom: 20px;
+  transition: all .15s ease-out;
+  background: black;
+  display: none;
+}
+
+.during-game .next-turn {
+  display: block;
+}
+
+button.start-game {
+  position: absolute;
+  background: black;
+  display: none;
+  top: -20px;
+}
+
+.before-game .start-game {
+  display: block;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+button:active {
+  transform: scale(.97);
+}
