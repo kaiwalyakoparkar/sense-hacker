@@ -377,7 +377,6 @@ ol {
 	height: 20px;
 	right: 0;
 	top: 1px;
-	background-image: url("../img/icons/arrow-down.png");
 	background-repeat: no-repeat;
 	background-position: right center;
 }
@@ -391,9 +390,6 @@ ol {
 	color: #b01ba5;
 }
 
-.main-menu li a:hover:after {
-	background-image: url("../img/icons/arrow-down-color.png");
-}
 
 .main-menu li a:hover i {
 	color: #b01ba5;
@@ -409,48 +405,8 @@ ol {
 	color: #b01ba5;
 }
 
-.main-menu li:hover>a:after {
-	background-image: url("../img/icons/arrow-down-color.png");
-}
 
-.main-menu li .sub-menu {
-	position: absolute;
-	list-style: none;
-	text-align: left;
-	width: 220px;
-	left: 0;
-	top: 100%;
-	padding: 20px 0;
-	visibility: hidden;
-	opacity: 0;
-	margin-top: 50px;
-	background: #fff;
-	z-index: 99;
-	-webkit-transition: all 0.4s;
-	-o-transition: all 0.4s;
-	transition: all 0.4s;
-	-webkit-box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.4);
-	box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.4);
-}
 
-.main-menu li .sub-menu li {
-	display: block;
-}
-
-.main-menu li .sub-menu li a {
-	display: block;
-	color: #000;
-	margin-right: 0;
-	padding: 8px 30px;
-}
-
-.main-menu li .sub-menu li a:after {
-	display: none;
-}
-
-.main-menu li .sub-menu li a:hover {
-	color: #b01ba5;
-}
 
 .slicknav_menu {
 	display: none;
