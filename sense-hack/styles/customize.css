@@ -20,3 +20,8 @@
 .hacker-color {
   background-color: #ce3d20;
 }
+
+.hacker-area {
+  background-color: #3c1912;
+  background-image: url(images/chip.svg);
+}
