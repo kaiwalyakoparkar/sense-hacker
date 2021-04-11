@@ -20,7 +20,7 @@ body {
   display: flex;
 }
 
-.game-board h1 {
+/* .game-board h1 {
   padding: 12px 10px 0 10px;
   margin: 0;
   font-size: 24px;
@@ -34,6 +34,28 @@ body {
 }
 
 h1 strong {
+  color: white;
+  font-style: normal;
+} */
+
+.game-board .title-h1 {
+  margin: 0;
+  font-weight: 400;
+  color: rgba(255,255,255,.6);
+  font-style: italic;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 2;
+}
+
+.title-h1 h1 {
+  font-size: 2.5vh;
+  text-align: center;
+}
+
+.title-h1 h1 strong {
   color: white;
   font-style: normal;
 }
@@ -436,7 +458,7 @@ button[disabled=true] {
 }
 
 .hacker-area .thumbnail img {
-  height: 320px;
+  height: 50vh;
 }
 
 .player-area .thumbnail {
@@ -446,6 +468,6 @@ button[disabled=true] {
 }
 
 .player-area .thumbnail img {
-  height: 320px;
+  height: 50vh;
 }
 
