@@ -1,10 +1,10 @@
 <h1 align="center">
-    Sense Hacker
+    👹 Sense Hacker 😎
 </h1>
 
 <p align="center">
     ✨ Welcome to Sense Hack ✨ <br />
-    This game embarks the common phishishing traps used by the hacker 👹 and spreads awareness in users 😎 to keep themselves safe in this cyber world
+    This game embarks the common phishishing traps used by the hacker 👹 and spreads awareness in users  to keep themselves safe in this cyber world
 </p>
 <br />
 
