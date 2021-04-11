@@ -4,30 +4,97 @@
 
 <p align="center">
     ✨ Welcome to Sense Hack ✨ <br />
-    This game embarks the common phishishing traps used by the hacker 👹 and spreads awareness in users  to keep themselves safe in this cyber world
+    This game embarks the common phishing traps used by the hacker 👹 and spreads awareness in users  to keep themselves safe in this cyber world
 </p>
 <br />
 
 ## ❤️ Note for new Contributors : ❤️
 
 Thank you very much for considering this project. Make sure you read [Code of Conduct](CODE_OF_CONDUCT.md) and [Contribution Guidelines](CONTRIBUTING.md) before making contributions. Feel free to raise an issue and after gettting assigned to it, you are all set to work on it.
-## 📌 About the project
+## 📌 About the project :
 This project was intenisonally built for the Merge Intern's `Hack You` Hackathon. This project is helpful for gaining awareness about keeping yourself safe in the cyber space and get out of the zone of becomming an easy target
 
-## 📌 Story of the project
+## 📌 Story of the project :
 The story of the project is pretty interesting. There's an anonymous hacker out there and his next target is you 😱. He performs his tasks (attacks) on you and you are with three options. If you choose the correct one then you can you make the hacker loose points 🙌 . Othervise you end up being a victim.
+
+## 📌 Demo Images :
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+## 🚩 Landing Page :
+<div class="row">
+  <div class="column">
+    <img src="./img/documentation/1.png" height="200px">
+  </div>
+  <div class="column">
+    <img src="./img/documentation/2.png" height="200px" >
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="./img/documentation/3.png" height="200px">
+  </div>
+  <div class="column">
+    <img src="./img/documentation/4.png" height="200px">
+  </div>
+</div>
+
+
+## 🚩 Gaming Panel 
+<div class="row">
+  <div class="column">
+    <img src="./img/documentation/dashboard.png" height="200px">
+  </div>
+  <div class="column">
+    <img src="./img/documentation/question.png" height="200px" >
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="./img/documentation/userCorrect.png" height="200px">
+  </div>
+  <div class="column">
+    <img src="./img/documentation/userWrong.png" height="200px">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="./img/documentation/userWins.png" height="200px">
+  </div>
+  <div class="column">
+    <img src="./img/documentation/hackerWins.png" height="200px">
+  </div>
+</div>
+
+## 📌 Demo Video
+<img src="./img/documentation/demo.gif">
 
 ## 📌 Technologies used
 
 ### 1. Landing Page
-1. Html 5
-2. Css3
-3. Vanilla js
+1. HTML 5
+2. CSS 3
+3. Vanilla JS
 
 ### 2. The game pannel
-1. Html 5
-2. Css 3
-3. Vanilla js
+1. HTML 5
+2. CSS 3
+3. Vanilla JS
 
 
 ## 📌 Contribution :
@@ -44,7 +111,7 @@ For new contibution or feature :
 ## 📌 Steps to contibute :
 
 1. Fork the project:
-Fork the project from https://github.com/kaiwalyakoparkar/sense-hack/
+Fork the project from https://github.com/kaiwalyakoparkar/sense-hacker/
 
 2. Clonning the project :
 ```git
