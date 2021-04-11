@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-    ✨ Welcome to Sense Hack ✨ <br />
+    ✨ Welcome to Sense Hacker ✨ <br />
     This game embarks the common phishing traps used by the hacker 👹 and spreads awareness in users  to keep themselves safe in this cyber world
 </p>
 <br />
@@ -36,6 +36,7 @@ The story of the project is pretty interesting. There's an anonymous hacker out 
   display: table;
 }
 </style>
+
 ## 🚩 Landing Page :
 <div class="row">
   <div class="column">
