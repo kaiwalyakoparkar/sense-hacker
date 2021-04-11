@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-    ✨ Welcome to Sense Hack ✨ <br />
+    ✨ Welcome to Sense Hacker ✨ <br />
     This game embarks the common phishing traps used by the hacker 👹 and spreads awareness in users  to keep themselves safe in this cyber world
 </p>
 <br />
@@ -18,24 +18,7 @@ This project was intenisonally built for the Merge Intern's `Hack You` Hackathon
 The story of the project is pretty interesting. There's an anonymous hacker out there and his next target is you 😱. He performs his tasks (attacks) on you and you are with three options. If you choose the correct one then you can you make the hacker loose points 🙌 . Othervise you end up being a victim.
 
 ## 📌 Demo Images :
-<style>
-* {
-  box-sizing: border-box;
-}
 
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
 ## 🚩 Landing Page :
 <div class="row">
   <div class="column">
