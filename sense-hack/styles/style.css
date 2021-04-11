@@ -174,10 +174,11 @@ button.next-turn {
 
 button.start-game {
   position: absolute;
-  background: black;
+  background: linear-gradient(90deg, #2a79d0, #ce3d20);
+  padding: 20px 30px;
   display: none;
   top: 50%;
-  left:-18%;
+  left:-15%;
 }
 
 .before-game .start-game {
