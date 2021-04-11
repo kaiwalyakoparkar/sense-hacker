@@ -8,6 +8,9 @@
 </p>
 <br />
 
+# 🎉 Achievements:🎉
+### <b> ❤️ This project has won 2nd prize in Merge Interns's Hack you hackathon ❤️ </b>
+
 ## ❤️ Note for new Contributors : ❤️
 
 Thank you very much for considering this project. Make sure you read [Code of Conduct](CODE_OF_CONDUCT.md) and [Contribution Guidelines](CONTRIBUTING.md) before making contributions. Feel free to raise an issue and after gettting assigned to it, you are all set to work on it.
