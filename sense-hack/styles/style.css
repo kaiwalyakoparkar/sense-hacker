@@ -195,7 +195,7 @@ button:active {
 .winner-section {
   display: none;
   position: fixed;
-  padding: 15px 0;
+  padding: 30px 0;
   left: 0;
   right: 0;
   bottom: 0;
