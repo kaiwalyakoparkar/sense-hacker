@@ -1,3 +1,4 @@
+var audioObj = new Audio("sound.mp3");
 // Set starting life totals here
 var playerLife = 5;
 var hackerLife = 5;
@@ -113,15 +114,20 @@ function compareCards(){
 
 // Shows the winner message
 function gameOver(winner) {
+  audioObj.pause();
   document.querySelector(".game-board").classList.add("game-over");
   document.querySelector(".winner-section").style.display = "flex";
   document.querySelector(".winner-section").classList.remove("player-color");
   document.querySelector(".winner-section").classList.remove("hacker-color");
 
   if(winner == "Hacker") {
+    let evilAudio = new Audio("evil-laugh.mp3");
+    evilAudio.play();
     document.querySelector(".winner-message").innerHTML = hackerWinnerMessage;
     document.querySelector(".winner-section").classList.add("hacker-color");
   } else {
+    let ohNoAudio = new Audio("Oh-no-sound-effect.mp3");
+    ohNoAudio.play();
     document.querySelector(".winner-message").innerHTML = playerWinnerMessage;
     document.querySelector(".winner-section").classList.add("player-color");
   }
@@ -130,6 +136,12 @@ function gameOver(winner) {
 
 // Starts the game
 function startGame() {
+  audioObj.loop = true;
+  audioObj.addEventListener("canplaythrough", event => {
+    /* the audio is now playable; play it if permissions allow */
+    myAudioElement.play();
+  });
+  audioObj.play();
   document.querySelector(".game-board").classList.remove("before-game");
   document.querySelector(".game-board").classList.add("during-game");
   playTurn();

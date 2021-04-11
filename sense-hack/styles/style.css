@@ -458,7 +458,7 @@ button[disabled=true] {
 }
 
 .hacker-area .thumbnail img {
-  height: 320px;
+  height: 50vh;
 }
 
 .player-area .thumbnail {
@@ -468,6 +468,6 @@ button[disabled=true] {
 }
 
 .player-area .thumbnail img {
-  height: 320px;
+  height: 50vh;
 }
 
