@@ -10,6 +10,8 @@
 
 # 🎉 Achievements:🎉
 ### <b> ❤️ This project has won 2nd prize in Merge Interns's Hack you hackathon ❤️ </b>
+<img src="https://user-images.githubusercontent.com/73097560/114392724-bc9cef80-9bcb-11eb-86aa-9b4dd111d331.png">
+<a href="https://devpost.com/software/sense-hacker">Check here</a>
 
 ## ❤️ Note for new Contributors : ❤️
 
