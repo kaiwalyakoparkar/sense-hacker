@@ -152,7 +152,7 @@ var scenarios = [
     },
     playerCards : [
       {
-        description : "You can't because I have turnned on Automatic Updates for my operating system.",
+        description : "You can't because I have turned on Automatic Updates for my operating system.",
         power : 4,
       },
       {
