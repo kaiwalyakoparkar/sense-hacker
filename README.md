@@ -99,7 +99,7 @@ For new contibution or feature :
 1. Fork the project:
 Fork the project from https://github.com/kaiwalyakoparkar/sense-hacker/
 
-2. Clonning the project :
+2. Cloning the project :
 ```git
 git clone https://github.com/<your-user-name>/sense-hack.git
 ```
